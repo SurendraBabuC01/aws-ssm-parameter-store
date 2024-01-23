@@ -9,6 +9,7 @@ parameters = [
   {name="dev.catalogue.mongodb_url", value="mongodb://mongodb-dev.surendrababuc01.online:27017/catalogue"},
   {name="dev.user.redis_host", value="redis-dev.surendrababuc01.online"},
   {name="dev.user.mongo", value="MONGO=true"},
+  {name="dev.user.mongodb_endpoint", value="mongodb-dev.surendrababuc01.online"},
   {name="dev.user.mongo_url", value="mongodb://mongodb-dev.surendrababuc01.online:27017/users"},
   {name="dev.cart.redis_host", value="redis-dev.surendrababuc01.online"},
   {name="dev.cart.catalogue_host", value="catalogue-dev.surendrababuc01.online"},

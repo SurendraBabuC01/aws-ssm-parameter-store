@@ -12,10 +12,8 @@ parameters = [
   { name = "dev.cart.redis_host", value = "elasticache-dev-elasticache.kqlvzv.ng.0001.use1.cache.amazonaws.com" },
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.surendrababuc01.online" },
   { name = "dev.cart.catalogue_port", value = "80" },
-  { name = "dev.shipping.mysql_endpoint", value = "mysql-dev.surendrababuc01.online" },
-  { name = "dev.shipping.cart_endpoint", value = "cart-dev.surendrababuc01.online:8080" },
-  { name = "dev.shipping.db_host", value = "mysql-dev.surendrababuc01.online" },
-  { name = "dev.shipping.db_user", value = "root" },
+  { name = "dev.shipping.cart_endpoint", value = "cart-dev.surendrababuc01.online:80" },
+  { name = "dev.rds.db_host", value = "rds-dev-rds.cluster-cinp1x4vnumy.us-east-1.rds.amazonaws.com" },
   { name = "dev.payment.cart_host", value = "cart-dev.surendrababuc01.online" },
   { name = "dev.payment.cart_port", value = "8080" },
   { name = "dev.payment.user_host", value = "user-dev.surendrababuc01.online" },
@@ -33,6 +31,10 @@ passwords = [
   { name = "dev.rds.db_user", value = "roboshop" },
   { name = "dev.rds.db_pass", value = "roboshop123456" },
   { name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" },
-  { name = "dev.catalogue.mongodb_url", value = "mongodb://roboshop:roboshop123456@docdb-dev-docdb.cluster-cinp1x4vnumy.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
-  { name = "dev.user.mongo_url", value = "mongodb://roboshop:roboshop123456@docdb-dev-docdb.cluster-cinp1x4vnumy.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
+  { name  = "dev.catalogue.mongodb_url",
+    value = "mongodb://roboshop:roboshop123456@docdb-dev-docdb.cluster-cinp1x4vnumy.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+  },
+  { name  = "dev.user.mongo_url",
+    value = "mongodb://roboshop:roboshop123456@docdb-dev-docdb.cluster-cinp1x4vnumy.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+  }
 ]

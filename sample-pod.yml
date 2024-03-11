@@ -15,3 +15,6 @@ spec:
     - name: debug
       image: 127710927797.dkr.ecr.us-east-1.amazonaws.com/aws-ssm-parameter-store:latest
       imagePullPolicy: Always
+      env:
+        - name: PARAMS
+          value: "prod.payment.cart_host prod.payment.cart_port prod.payment.user_port"

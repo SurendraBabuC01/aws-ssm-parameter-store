@@ -1,0 +1,1 @@
+aws ssm get-parameters --names "prod.docdb.db_pass" | jq .Parameters[].Value | sed -e 's/"//g'

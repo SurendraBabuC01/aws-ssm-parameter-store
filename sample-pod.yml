@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-pod
+spec:
+  containers:
+    - name: debug
+      image: 127710927797.dkr.ecr.us-east-1.amazonaws.com/aws-ssm-parameter-store:latest
+      imagePullPolicy: Always

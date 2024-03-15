@@ -17,4 +17,4 @@ spec:
       imagePullPolicy: Always
       env:
         - name: PARAMS
-          value: "prod.payment.cart_host prod.payment.cart_port prod.payment.user_port"
+          value: {{ .Values.params }}
